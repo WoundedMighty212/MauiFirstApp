@@ -33,31 +33,41 @@
             Text="Suburb"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="Suburb_Editor"/>
+        <SearchBar x:Name="Suburb_Editor" TextChanged="Suburb_Editor_TextChanged"/>
         <Label 
             Text="City"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="City_Editor"/>
+        <SearchBar x:Name="City_Editor" TextChanged="City_Editor_TextChanged"/>
         <Label 
             Text="Province"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="Province_Editor"/>
+        <SearchBar x:Name="Province_Editor" TextChanged="Province_Editor_TextChanged"/>
         <Label 
             Text="Country"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="Country_Editor"/>
+        <SearchBar  x:Name="Country_Editor" TextChanged="Country_Editor_TextChanged" />
         <Label 
             Text="Sex"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="Sex_Editor"/>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="CenterAndExpand">
+            <RadioButton x:Name="MaleRadioButton"
+                         Content="Male"
+                         GroupName="Gender"
+                         CheckedChanged="MaleRadioButton_CheckedChanged"/>
+            <RadioButton x:Name="FemaleRadioButton"
+                         Content="Female"
+                         GroupName="Gender"
+                         CheckedChanged="FemaleRadioButton_CheckedChanged"/>
+        </StackLayout>
         <Label 
             Text="Race"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Editor x:Name="Race_Editor"/>
+        <Picker x:Name="Race_Picker" Title="Choose an option" SelectedIndexChanged="Race_Picker_SelectedIndexChanged" />
     </VerticalStackLayout>
 </ContentPage>
