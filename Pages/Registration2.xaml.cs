@@ -2,10 +2,12 @@ using TestApp.Model;
 namespace TestApp.Pages;
 public partial class Registration2 : ContentPage
 {
-	public Registration2(UserLoginInfo userLoginInfo)
+    private UserLoginInfo ParentInfo;
+    public Registration2(UserLoginInfo userLoginInfo)
 	{
 		InitializeComponent();
-	}
+        ParentInfo = userLoginInfo;
+    }
 
     private void Race_Picker_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -38,6 +40,11 @@ public partial class Registration2 : ContentPage
     }
 
     private void Suburb_Editor_TextChanged(object sender, TextChangedEventArgs e)
+    {
+
+    }
+
+    private void Submit_Register_Clicked(object sender, EventArgs e)
     {
 
     }

@@ -74,5 +74,6 @@
          VerticalOptions="Center" 
          HorizontalOptions="Start" />
         <DatePicker x:Name="Birthdate_Picker" />
+        <Button x:Name="Submit_Register" Text="Register" Clicked="Submit_Register_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

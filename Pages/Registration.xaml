@@ -53,6 +53,6 @@
             Text="Your password does not match"
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
-        <Button x:Name="Next_Register" Text="Register" Clicked="Next_Register_Clicked" />
+        <Button x:Name="Next_Register" Text="Next Page" Clicked="Next_Register_Clicked" />
     </VerticalStackLayout>
 </ContentPage>
