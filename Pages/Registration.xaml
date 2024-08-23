@@ -5,8 +5,54 @@
              Title="Registration">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Account Name"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Start" />
+        <Editor x:Name="AccountName_Editor"/>
+        <Label 
+            Text="Email Address"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="EmailAddress_Editor" />
+        <Label 
+               x:Name="lblEmailError"
+               IsVisible="False"
+               Text="Your Email does not meet Requirements"
+               VerticalOptions="Center" 
+               HorizontalOptions="Start" />
+        <Label 
+            Text="Retype Email Address"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Retype_EmailAddress_Editor"  />
+        <Label 
+            x:Name="lblEmailmatch"
+            IsVisible="False"
+            Text="Your Email does not match"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Label 
+            Text="Password"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Password_Editor" />
+        <Label 
+             x:Name="lblPassError"
+             IsVisible="False"
+             Text="Your password does not meet Requirements"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start" />
+        <Label 
+            Text="Retype Password"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Retype_Password_Editor" />
+        <Label 
+            x:Name="lblPassmatch"
+            IsVisible="False"
+            Text="Your password does not match"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Button x:Name="Next_Register" Text="Register" Clicked="Next_Register_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

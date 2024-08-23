@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.Pages.Registration2"
+             Title="Registration2">
+    <VerticalStackLayout>
+        <Label 
+             Text="First Name"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start" />
+        <Editor x:Name="FirstName_Editor"/>
+        <Label 
+             Text="Middel Name"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start" />
+        <Editor x:Name="MiddelName_Editor"/>
+        <Label 
+             Text="Last Name"
+             VerticalOptions="Center" 
+             HorizontalOptions="Start" />
+        <Editor x:Name="LastName_Editor"/>
+    </VerticalStackLayout>
+</ContentPage>
