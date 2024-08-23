@@ -26,7 +26,7 @@ public partial class Registration2 : ContentPage
             Province1= Province_Editor.Text,   
             ContactNumber1 = ContactNumber_Editor.Text,
             Country1 = Country_Editor.Text,
-            Race1 = Race_Picker.SelectedIndex,
+            Race1 = Race_Picker.SelectedItem.ToString(),
             FKID1 = ParentInfo.Id,
             Sex1 = sex,
             Birthdate1 = date,
