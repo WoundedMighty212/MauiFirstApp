@@ -19,5 +19,45 @@
              VerticalOptions="Center" 
              HorizontalOptions="Start" />
         <Editor x:Name="LastName_Editor"/>
+        <Label 
+            Text="Contact Number"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="ContactNumber_Editor"/>
+        <Label 
+            Text="Street Address"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="StreetAddress_Editor"/>
+        <Label 
+            Text="Suburb"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Suburb_Editor"/>
+        <Label 
+            Text="City"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="City_Editor"/>
+        <Label 
+            Text="Province"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Province_Editor"/>
+        <Label 
+            Text="Country"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Country_Editor"/>
+        <Label 
+            Text="Sex"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Sex_Editor"/>
+        <Label 
+            Text="Race"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Editor x:Name="Race_Editor"/>
     </VerticalStackLayout>
 </ContentPage>
