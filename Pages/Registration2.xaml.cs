@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using TestApp.Model;
 namespace TestApp.Pages;
 public partial class Registration2 : ContentPage
@@ -9,6 +10,11 @@ public partial class Registration2 : ContentPage
 	{
 		InitializeComponent();
         ParentInfo = userLoginInfo;
+    }
+
+    private void UpdateDropDownlist()
+    {
+        Race_Picker.ItemsSource = Enum.GetNames(typeof(Enums.Races)).ToList();
     }
 
     private UserData CreateDataEntity()

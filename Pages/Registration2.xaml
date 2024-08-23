@@ -3,77 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestApp.Pages.Registration2"
              Title="Registration2">
-    <VerticalStackLayout>
-        <Label 
-             Text="First Name"
-             VerticalOptions="Center" 
-             HorizontalOptions="Start" />
-        <Editor x:Name="FirstName_Editor"/>
-        <Label 
-             Text="Middel Name"
-             VerticalOptions="Center" 
-             HorizontalOptions="Start" />
-        <Editor x:Name="MiddelName_Editor"/>
-        <Label 
-             Text="Last Name"
-             VerticalOptions="Center" 
-             HorizontalOptions="Start" />
-        <Editor x:Name="LastName_Editor"/>
-        <Label 
-            Text="Contact Number"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <Editor x:Name="ContactNumber_Editor"/>
-        <Label 
-            Text="Street Address"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <Editor x:Name="StreetAddress_Editor"/>
-        <Label 
-            Text="Suburb"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <SearchBar x:Name="Suburb_Editor" TextChanged="Suburb_Editor_TextChanged"/>
-        <Label 
-            Text="City"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <SearchBar x:Name="City_Editor" TextChanged="City_Editor_TextChanged"/>
-        <Label 
-            Text="Province"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <SearchBar x:Name="Province_Editor" TextChanged="Province_Editor_TextChanged"/>
-        <Label 
-            Text="Country"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <SearchBar  x:Name="Country_Editor" TextChanged="Country_Editor_TextChanged" />
-        <Label 
-            Text="Sex"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <StackLayout Orientation="Horizontal"
-                     VerticalOptions="CenterAndExpand">
-            <RadioButton x:Name="MaleRadioButton"
-                         Content="Male"
-                         GroupName="Gender"
-                         CheckedChanged="MaleRadioButton_CheckedChanged"/>
-            <RadioButton x:Name="FemaleRadioButton"
-                         Content="Female"
-                         GroupName="Gender"
-                         CheckedChanged="FemaleRadioButton_CheckedChanged"/>
-        </StackLayout>
-        <Label 
-            Text="Race"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        <Picker x:Name="Race_Picker" Title="Choose an option" SelectedIndexChanged="Race_Picker_SelectedIndexChanged" />
-        <Label 
-         Text="Birthdate"
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+          Text="First Name"
+          VerticalOptions="Center" 
+          HorizontalOptions="Start" />
+            <Editor x:Name="FirstName_Editor"/>
+            <Label 
+          Text="Middel Name"
+          VerticalOptions="Center" 
+          HorizontalOptions="Start" />
+            <Editor x:Name="MiddelName_Editor"/>
+            <Label 
+          Text="Last Name"
+          VerticalOptions="Center" 
+          HorizontalOptions="Start" />
+            <Editor x:Name="LastName_Editor"/>
+            <Label 
+         Text="Contact Number"
          VerticalOptions="Center" 
          HorizontalOptions="Start" />
-        <DatePicker x:Name="Birthdate_Picker" />
-        <Button x:Name="Submit_Register" Text="Register" Clicked="Submit_Register_Clicked" />
-    </VerticalStackLayout>
+            <Editor x:Name="ContactNumber_Editor"/>
+            <Label 
+         Text="Street Address"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <Editor x:Name="StreetAddress_Editor"/>
+            <Label 
+         Text="Suburb"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <SearchBar x:Name="Suburb_Editor" TextChanged="Suburb_Editor_TextChanged"/>
+            <Label 
+         Text="City"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <SearchBar x:Name="City_Editor" TextChanged="City_Editor_TextChanged"/>
+            <Label 
+         Text="Province"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <SearchBar x:Name="Province_Editor" TextChanged="Province_Editor_TextChanged"/>
+            <Label 
+         Text="Country"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <SearchBar  x:Name="Country_Editor" TextChanged="Country_Editor_TextChanged" />
+            <Label 
+         Text="Sex"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <StackLayout Orientation="Horizontal"
+                  VerticalOptions="CenterAndExpand">
+                <RadioButton x:Name="MaleRadioButton"
+                      Content="Male"
+                      GroupName="Gender"
+                      CheckedChanged="MaleRadioButton_CheckedChanged"/>
+                <RadioButton x:Name="FemaleRadioButton"
+                      Content="Female"
+                      GroupName="Gender"
+                      CheckedChanged="FemaleRadioButton_CheckedChanged"/>
+            </StackLayout>
+            <Label 
+         Text="Race"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+            <Picker x:Name="Race_Picker" Title="Choose an option" SelectedIndexChanged="Race_Picker_SelectedIndexChanged" />
+            <Label 
+      Text="Birthdate"
+      VerticalOptions="Center" 
+      HorizontalOptions="Start" />
+            <DatePicker x:Name="Birthdate_Picker" />
+            <Button x:Name="Submit_Register" Text="Register" Clicked="Submit_Register_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
