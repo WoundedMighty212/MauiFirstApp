@@ -58,18 +58,16 @@
                   VerticalOptions="CenterAndExpand">
                 <RadioButton x:Name="MaleRadioButton"
                       Content="Male"
-                      GroupName="Gender"
-                      CheckedChanged="MaleRadioButton_CheckedChanged"/>
+                      GroupName="Gender" />
                 <RadioButton x:Name="FemaleRadioButton"
                       Content="Female"
-                      GroupName="Gender"
-                      CheckedChanged="FemaleRadioButton_CheckedChanged"/>
+                      GroupName="Gender" />
             </StackLayout>
             <Label 
          Text="Race"
          VerticalOptions="Center" 
          HorizontalOptions="Start" />
-            <Picker x:Name="Race_Picker" Title="Choose an option" SelectedIndexChanged="Race_Picker_SelectedIndexChanged" />
+            <Picker x:Name="Race_Picker" Title="Choose an option" />
             <Label 
       Text="Birthdate"
       VerticalOptions="Center" 

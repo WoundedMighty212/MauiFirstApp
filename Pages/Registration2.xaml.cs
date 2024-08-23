@@ -4,12 +4,13 @@ namespace TestApp.Pages;
 public partial class Registration2 : ContentPage
 {
     private string sex;
-    private string date;
+    //private string date;
     private UserLoginInfo ParentInfo;
     public Registration2(UserLoginInfo userLoginInfo)
 	{
 		InitializeComponent();
         ParentInfo = userLoginInfo;
+        UpdateDropDownlist();
     }
 
     private void UpdateDropDownlist()
@@ -19,6 +20,14 @@ public partial class Registration2 : ContentPage
 
     private UserData CreateDataEntity()
     {
+        if (MaleRadioButton.IsChecked)
+        {
+            sex = "Male";
+        }
+        if (FemaleRadioButton.IsChecked)
+        {
+            sex = "Female";
+        }
         UserData userData = new UserData()
         {
             FirstName1 = FirstName_Editor.Text,
@@ -32,27 +41,12 @@ public partial class Registration2 : ContentPage
             Province1= Province_Editor.Text,   
             ContactNumber1 = ContactNumber_Editor.Text,
             Country1 = Country_Editor.Text,
-            Race1 = Race_Picker.SelectedItem.ToString(),
+            Race1 = Race_Picker.SelectedItem?.ToString() ?? string.Empty,
             FKID1 = ParentInfo.Id,
             Sex1 = sex,
-            Birthdate1 = date,
+            Birthdate1 = Birthdate_Picker.Date.ToShortDateString(),
         };
         return userData;
-    }
-
-    private void Race_Picker_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-
-    private void FemaleRadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
-    {
-
-    }
-
-    private void MaleRadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
-    {
-
     }
 
     private void Country_Editor_TextChanged(object sender, TextChangedEventArgs e)
