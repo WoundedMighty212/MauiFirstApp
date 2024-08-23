@@ -3,7 +3,7 @@ using TestApp.Pages;
 
 namespace TestApp
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage //push
     {
         public MainPage()
         {
