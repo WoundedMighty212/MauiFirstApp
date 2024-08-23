@@ -69,5 +69,10 @@
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
         <Picker x:Name="Race_Picker" Title="Choose an option" SelectedIndexChanged="Race_Picker_SelectedIndexChanged" />
+        <Label 
+         Text="Birthdate"
+         VerticalOptions="Center" 
+         HorizontalOptions="Start" />
+        <DatePicker x:Name="Birthdate_Picker" />
     </VerticalStackLayout>
 </ContentPage>
