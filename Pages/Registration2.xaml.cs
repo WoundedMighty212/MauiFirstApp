@@ -11,7 +11,7 @@ public partial class Registration2 : ContentPage
         ParentInfo = userLoginInfo;
     }
 
-    private void CreateDataEntity()
+    private UserData CreateDataEntity()
     {
         UserData userData = new UserData()
         {
@@ -31,6 +31,7 @@ public partial class Registration2 : ContentPage
             Sex1 = sex,
             Birthdate1 = date,
         };
+        return userData;
     }
 
     private void Race_Picker_SelectedIndexChanged(object sender, EventArgs e)
