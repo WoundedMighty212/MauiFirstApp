@@ -1,6 +1,5 @@
 ﻿
 using TestApp.Pages;
-
 namespace TestApp
 {
     public partial class MainPage : ContentPage 
@@ -30,5 +29,4 @@ namespace TestApp
             await Navigation.PushAsync(new Login());
         }
     }
-
 }
