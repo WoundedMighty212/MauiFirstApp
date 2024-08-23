@@ -2,6 +2,8 @@ using TestApp.Model;
 namespace TestApp.Pages;
 public partial class Registration2 : ContentPage
 {
+    private string sex;
+    private string date;
     private UserLoginInfo ParentInfo;
     public Registration2(UserLoginInfo userLoginInfo)
 	{
@@ -9,7 +11,27 @@ public partial class Registration2 : ContentPage
         ParentInfo = userLoginInfo;
     }
 
-    //private UserData
+    private void CreateDataEntity()
+    {
+        UserData userData = new UserData()
+        {
+            FirstName1 = FirstName_Editor.Text,
+            MiddelName1 = MiddelName_Editor.Text,
+            LastName1 = LastName_Editor.Text,
+            AccountName1 = ParentInfo.AccountName,
+            EmailAddress1 = ParentInfo.EmailAddress,
+            StreetAddress1 = StreetAddress_Editor.Text,
+            City1 = City_Editor.Text,
+            Suburb1 = Suburb_Editor.Text,
+            Province1= Province_Editor.Text,   
+            ContactNumber1 = ContactNumber_Editor.Text,
+            Country1 = Country_Editor.Text,
+            Race1 = Race_Picker.SelectedIndex,
+            FKID1 = ParentInfo.Id,
+            Sex1 = sex,
+            Birthdate1 = date,
+        };
+    }
 
     private void Race_Picker_SelectedIndexChanged(object sender, EventArgs e)
     {
